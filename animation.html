@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream panel animation</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald"
+      rel="stylesheet"
+    />
+    <meta http-equiv="refresh" content="15" />
+    .
+    <style>
+      #container {
+        width: 0px;
+        height: 0px;
+        background: #2e5794;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        overflow: hidden;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0px 0px 20px #0f3369;
+        box-shadow: 0px 0px 20px #0f3369;
+        -webkit-animation: animateRender 10s 0s 01;
+      }
+      #topBar {
+        height: 20px;
+      }
+      #containerContent {
+        letter-spacing: 8px;
+        text-align: center;
+        font-size: 24px;
+        width: 400px;
+        height: 80px;
+        background: #800080;
+        color: white;
+      }
+      @-webkit-keyframes animateRender {
+        0%,
+        100% {
+          width: 0px;
+          height: 20px;
+        }
+        20%,
+        80% {
+          width: 400px;
+          height: 20px;
+        }
+        30%,
+        70% {
+          width: 400px;
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="topBar"><img id="topBarLogo" src="./top-bar.jpg" /></div>
+      <div id="containerContent">
+        <div class="containerContentText">
+          <span>REMEMBER TO SUBSLIBE!</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
